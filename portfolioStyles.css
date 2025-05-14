@@ -7,10 +7,32 @@
 body {
     display: flex;
     flex-direction: column;
-/*
     background-color: #1C1C1D;
-*/
-    background-color: none;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+.main-content ul {
+    margin-left: 1em;
+    font-size: 1.4em;
 }
 
 /* ---vvv--- Navigation Bars ---vvv--- */
@@ -22,9 +44,61 @@ body {
     background-color: #0F0F0F;
     z-index: 10;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: flex-end;
+    justify-content: none;
     padding: 0em;
+}
+
+.nav-text-container {
+    width: 100%;
+    height: 4em;
+    background-color: none;
+}
+
+.nav-title {
+    width: 15em;
+    height: 50%;
+    background-color: none;
+    margin-top: .75em;
+    margin-left: 1.25em;
+    text-align: center;
+    float: left;
+}
+
+.top-nav-links {
+    width: 35em;
+    height: 100%;
+    float: right;
+    background-color: none;
+    margin-top: 0em;
+    text-align: center;
+}
+
+.top-nav-links nav ul {
+    margin-top: 1em;
+    display: flex;
+    gap: 2em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.top-nav-links nav ul li {
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.top-nav-links nav ul li a {
+    text-decoration: none;
+    background-color: none;
+    border-radius: 10px;
+    padding: .25em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-nav-links nav ul li a:hover {
+    background-color: #272727;
+    color: red;
 }
 
 /* Side Navigation Bar */
@@ -40,10 +114,24 @@ body {
     border-style: none;
 }
 
+.projects-title {
+    margin-top: 1em;
+    margin-left: 2.15em;
+    text-shadow: 5px 5px 5px red;
+    font-size: 2.25em;
+}
+
+.nav-hr {
+    width: 80%;
+    margin :auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    opacity: 50%;
+}
+
 .side-nav nav ul {
     list-style-type: none;
-    margin: 1em;
-    padding: 1em;
+    padding: none;
     background-color: none;
     text-align: center;
 }
@@ -54,48 +142,258 @@ body {
 }
 
 .side-nav nav ul li a {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     background-color: none;
-    font-size: 2em;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
 }
 
- /* --- Main Content --- */
+.side-nav nav ul li a:hover {
+    background-color: #3F3F3F;
+    color: red;
+}
+
+/* ---vvv--- Main Content ---vvv--- */
 .main-content {
     width: auto;
-    height: 100em;
+    height: auto;
     background-color: #424242;
     margin-top: 4em;
     margin-left: 17.5em;
     border-style: none;
-    padding: 1em;
-    flex: 1;
+    padding: 2em;
+    padding-bottom: 6em;
 }
 
-/* --May or may not need--
-@media screen and (max-width: 768px) {
-    .side-nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: auto;
-        left: 0;
-        box-shadow: none;
-        padding: 10px;
-    }
-    .content{
-       margin-left: 0;
-       padding-top: 60px;
-    }
-    .top-nav nav ul {
-        flex-direction: column;
-    }
-    }
-    */
+/* ---vvv--- People Helping People ---vvv--- */
+#php-skip-to {
+    width: 0;
+    height: 0;
+    background-color: red;
+}
 
-    .some-box {
-        width: 25em;
-        height: 50em;
-        background-color: grey;
-    }
+.php-container {
+    width: 95em;
+    height: 247.53em;
+    background-color: none;
+}
+
+.php-text-container {
+    width: 46.55em;
+    float: left;
+    background-color: none;
+    margin-bottom: 3em;
+}
+
+.php-images-container {
+    width: 46.55em;
+    height: auto;
+    float: right;
+    background-color: none;
+    margin-bottom: 3em;
+}
+
+.php-image-1 {
+    width: 100%;
+    height: 26.25em;
+    background-image: url(../zeyang77.github.io/images/php-images/php-wireframe1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    margin-bottom: 2em;
+}
+
+.php-image-2 {
+    width: 90%;
+    height: 39.65em;
+    margin: auto;
+    background-image: url(../zeyang77.github.io/images/php-images/php-wireframe3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    margin-bottom: none;
+}
+
+.php-images-container-2 {
+    width: 100%;
+    height: 90em;
+    float: left;
+    background-color: none;
+}
+
+.php-images-container-2 h3 {
+    margin-bottom: 1em;
+}
+
+.php-image-3 {
+    width: 80em;
+    height: 39.69em;
+    margin-bottom: 2em;
+    background-image: url(../zeyang77.github.io/images/php-images/php-prototype1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    padding-top: none;
+    border-style: solid;
+}
+
+.php-image-4 {
+    width: 80em;
+    height: 39.75em;
+    background-image: url(../zeyang77.github.io/images/php-images/php-prototype2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    border-style: solid;
+}
+
+.php-images-container-3 {
+    width: 46.55em;
+    height: auto;
+    float: right;
+    background-color: none;
+}
+
+.php-image-5 {
+    width: 100%;
+    height: 25.4em;
+    background-image: url(../zeyang77.github.io/images/php-images/php-excluded1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    margin-bottom: 2em;
+}
+
+.php-image-6 {
+    width: 100%;
+    height: 25.38em;
+    background-image: url(../zeyang77.github.io/images/php-images/php-excluded2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    margin-bottom: 2em;
+}
+
+.php-image-7 {
+    width: 100%;
+    height: 31.82em;
+    background-image: url(../zeyang77.github.io/images/php-images/php-mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+}
+
+/* ---vvv--- League Feature ---vvv--- */
+#lol-skip-to {
+    width: 95em;
+    opacity: 50%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.lol-container {
+    width: 95em;
+    height: 92.09em;
+    background-color: none;
+}
+
+.lol-images-container {
+    width: 46.55em;
+    height: auto;
+    float: left;
+    background-color: none;
+    margin-bottom: 3em;
+}
+
+.lol-image-1 {
+    width: 90%;
+    height: 62.8em;
+    background-image: url(../zeyang77.github.io/images/lol-images/lol-image1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    margin: auto;
+}
+
+.lol-image-2 {
+    width: 100%;
+    height: 26.28em;
+    background-image: url(../zeyang77.github.io/images/lol-images/lol-image2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    margin-bottom: 3em;
+}
+
+.lol-text-container {
+    width: 46.55em;
+    float: right;
+    background-color: none;
+    margin-bottom: 3em;
+}
+
+/* ---vvv--- UWSP Parking Feature ---vvv--- */
+#uwsp-skip-to {
+    width: 95em;
+    opacity: 50%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.uwsp-container {
+    width: 95em;
+    height: 135.25em;
+    background-color: none;
+}
+
+.uwsp-text-container {
+    width: 46.55em;
+    float: left;
+    background-color: none;
+    margin-bottom: 3em;
+}
+
+.uwsp-images-container {
+    width: 46.55em;
+    height: auto;
+    float: right;
+    background-color: none;
+    margin-bottom: 3em;
+}
+
+.uwsp-image-1 {
+    width: 80%;
+    height: 49.66em;
+    background-image: url(../zeyang77.github.io/images/parking-images/uwsp-parking1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 3em;
+}
+.uwsp-image-2 {
+    width: 80%;
+    height: 49.62em;
+    background-image: url(../zeyang77.github.io/images/parking-images/uwsp-parking2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.uwsp-image-3 {
+    width: 80%;
+    height: 30em;
+    background-image: url(../zeyang77.github.io/images/parking-images/uwsp-parking3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: blue;
+    margin: auto;
+}

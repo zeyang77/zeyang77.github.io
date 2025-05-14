@@ -1,0 +1,20 @@
+* {
+    color: white;
+}
+body {
+    background-color: #1C1C1D;
+}
+
+.option-links {
+    width: 25em;
+    height: 25em;
+    margin: auto;
+    margin-top: 16em;
+    background-color: #0F0F0F;
+
+}
+
+.option-links nav ul li {
+    text-align: center;
+    margin-top: 5em;
+}

@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1C1D;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+.main-content ul {
+    margin-left: 1em;
+    font-size: 1.4em;
+}
+
+/* ---vvv--- Navigation Bars ---vvv--- */
+/* Top Navigation Bar */
+.top-nav {
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    background-color: #0F0F0F;
+    z-index: 10;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    justify-content: none;
+    padding: 0em;
+}
+
+.nav-text-container {
+    width: 100%;
+    height: 4em;
+    background-color: none;
+}
+
+.nav-title {
+    width: 15em;
+    height: 50%;
+    background-color: none;
+    margin-top: .75em;
+    margin-left: 1.25em;
+    text-align: center;
+    float: left;
+}
+
+.top-nav-links {
+    width: 35em;
+    height: 100%;
+    float: right;
+    background-color: none;
+    margin-top: 0em;
+    text-align: center;
+}
+
+.top-nav-links nav ul {
+    margin-top: 1em;
+    display: flex;
+    gap: 2em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.top-nav-links nav ul li {
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.top-nav-links nav ul li a {
+    text-decoration: none;
+    background-color: none;
+    border-radius: 10px;
+    padding: .25em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-nav-links nav ul li a:hover {
+    background-color: #272727;
+    color: red;
+}
+
+
+.main-content {
+    width: auto;
+    height: 75em;
+    background-color: #424242;
+    margin-top: 4em;
+    border-style: none;
+    padding: 2em;
+    padding-bottom: 6em;
+}
